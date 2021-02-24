@@ -145,7 +145,7 @@
 
     echo '<p>';
 
-    if (LASTNAME) echo '"Меня зовут ' . LASTNAME . ' (' . $firstName[0] . $firstName[1] . '. ' . $patronymic[0] . $patronymic[1] . '.).<br />Мне ' . $age . ' лет."</p>';
+    if (defined('LASTNAME')) echo '"Меня зовут ' . LASTNAME . ' (' . $firstName[0] . $firstName[1] . '. ' . $patronymic[0] . $patronymic[1] . '.).<br />Мне ' . $age . ' лет."</p>';
     else 'Значения константы не существует';
 
     echo '</p>';
